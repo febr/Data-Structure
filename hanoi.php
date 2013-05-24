@@ -3,7 +3,8 @@
  * Towers Of Hanoi
  */
 function prtAction($n, $from, $to) {
-    echo $n . " : " . $from . " to " . $to . "\n";
+    //<br>:for web
+    echo $n . " : " . $from . " -> " . $to . "\n<br>";
 }
 
 function hanoi($n, $start, $temp, $end){
@@ -14,7 +15,7 @@ function hanoi($n, $start, $temp, $end){
     }
 }
 
-$n = 3;
+$n = $_GET[num];    //web
 $start = 'A';
 $temp = 'B';
 $end = 'C';
