@@ -28,19 +28,15 @@ while(!empty($temp)) {
 
     //searching
     foreach($parentArr as $value){
+        //print
+        echo $value.'->';
+
         foreach($map[$value] as $keyV =>$valueV){
             if($valueV == 1) {
                 array_push($temp, $keyV);
             }
         }
     }
-
-    //print
-    foreach($parentArr as $value){
-        echo $value."->";
-    }
-
-    //layer
     echo "\n";
 }
 
